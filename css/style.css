@@ -67,4 +67,57 @@ ol, ul {
 img {
     display: block;
     margin: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.list-title {
+    margin-bottom: 0.3rem;
+}
+
+.content-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.flex-container .content-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+#history {
+    border-left: 4px solid #004e89;
+    border-right: 4px solid #004e89;
+}
+
+#timeline {
+    border-left: 4px solid #004e89;
+    border-right: 4px solid #004e89;
+}
+
+#goat-debate {
+    border-left: 4px solid #fca311;
+    border-right: 4px solid #fca311;
+}
+
+#top-five {
+    border-left: 4px solid #fca311;
+    border-right: 4px solid #fca311;
 }
