@@ -128,11 +128,12 @@ img {
     border-right: 4px solid #fca311;
 }
 
+/*Media query for optimization for smaller screens (mobiles/tablets etc.)*/
 @media (max-width: 600px) {
     header {
         padding: 1.5rem 0.5rem;
     }
-
+    /*Smaller font-sizes to fit the smaller screen*/
     body {
         font-size: 16px;
     }
@@ -157,7 +158,7 @@ img {
         padding: 20px;
         font-size: 16px;
     }
-
+    /*Maintains aspect radio and adds margin on mobile devices*/
     img {
         max-width: 100%;
         height: auto;
@@ -168,7 +169,7 @@ img {
         padding: 1rem;
         margin-top: 2rem;
     }
-
+    /*Stacks content-boxes vertically instead of side-by-side and reduces gap*/
     .flex-container {
         flex-direction: column;
         align-items: center;
