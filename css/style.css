@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: rgb(137, 122, 95);
+    background-color: wheat;
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -79,7 +79,7 @@ img {
 .subtitle {
     font-size: 20px;
     font-style: italic;
-    color: #4f4f4f;
+    color: #4A4A4A;
     margin-top: 0.5rem;
 }
 
