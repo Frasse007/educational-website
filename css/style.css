@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: wheat;
+    background-color: rgb(137, 122, 95);
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -79,7 +79,7 @@ img {
 .subtitle {
     font-size: 20px;
     font-style: italic;
-    color: #555;
+    color: #4f4f4f;
     margin-top: 0.5rem;
 }
 
@@ -126,4 +126,53 @@ img {
 #top-five {
     border-left: 4px solid #fca311;
     border-right: 4px solid #fca311;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    ol, ul {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    footer {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
 }
