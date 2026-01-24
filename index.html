@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Links to style.css stylesheet-->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Text that shows on the page tab of browser -->
     <title>Basketball</title> 
-  </head> 
-  <body>
+</head> 
+<body class="text-center">
     <!-- Header to introduce the topic of the page -->
-    <header>
-        <h1>The Game of Basketball</h1>
-        <p class="subtitle">Learn about the history and basics of one of the world's most popular sports</p>
+    <header class="text-center pt-3 pb-1 mb-4">
+        <h1 class="display-4 mb-2">The Game of Basketball</h1>
+        <p class="lead text-body-secondary">Learn about the history and basics of one of the world's most popular sports</p>
     </header>
-    <!-- Main page content about legendary basketball players -->
-    <main>
-        <!-- First section-->
-        <div class="flex-container"> 
-            <section id="history" class="content-box">
+    <div class="container my-4">
+        <!-- Main page content about legendary basketball players -->
+        <main>
+            <!-- First section-->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="card h-100 rounded shadow-sm" id="history">
+                        <div class="card-body">
+                            <h2>The Birth of Basketball</h2>
+                            <p>Basketball was invented in December 1891 by Dr. James Naismith. He was a Canadian physical education instructor in Springfield, Massachusetts. Naismith was tasked with creating an indoor game to keep his students active during the cold winter months. Using a soccer ball and two peach baskets nailed to elevated tracks, he developed a game that would later evolve into basketball as we know it today.</p>
+                            <p>The original game had 13 basic rules and was played with nine players on each team. The objective was simple, throw the ball into the opposing team's peach basket. Unlike today's fast-paced game, players had to climb a ladder to retrieve the ball after each successful shot. It wasn't until 1906 that open-bottom nets were introduced. This significantly revolutionized the flow of the game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 rounded shadow-sm" id="timeline">
+                        <div class="card-body">
+                            <!-- Title for list -->
+                            <h2 class="card-title h4 mb-1">Milestones in Basketball History</h2>
+                            <!-- Unordered list showing timeline of basketball history -->
+                            <ul class="mb-1">
+                                <li class="mb-2"><strong>1891</strong> - James Naismith invents basketball in Springfield, Massachusetts</li>
+                                <li class="mb-2"><strong>1936</strong> - Basketball becomes an olympic sport</li>
+                                <li class="mb-2"><strong>1946</strong> - The Basketball Association of America (BAA) is founded</li>
+                                <li class="mb-2"><strong>1949</strong> - The BAA merges with the National Basketball League(NBL) and the National Basketball Association(NBA) is formed</li>
+                                <li class="mb-2"><strong>1954</strong> - NBA introduces the 24-second shot clock, revolutionizing the pace of the game</li>
+                                <li class="mb-2"><strong>1992</strong> - The "Dream Team" wins gold at the Barcelona Olympics, globalizing basketball</li>
+                                <li class="mb-2"><strong>1996</strong> - The WNBA is established</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second section -->
+            <section class="mb-3">
                 <!-- Section title -->
-                <h2>The Birth of Basketball</h2>
-                <p>Basketball was invented in December 1891 by Dr. James Naismith. He was a Canadian physical education instructor in Springfield, Massachusetts. Naismith was tasked with creating an indoor game to keep his students active during the cold winter months. Using a soccer ball and two peach baskets nailed to elevated tracks, he developed a game that would later evolve into basketball as we know it today.</p>
-                <p>The original game had 13 basic rules and was played with nine players on each team. The objective was simple, throw the ball into the opposing team's peach basket. Unlike today's fast-paced game, players had to climb a ladder to retrieve the ball after each successful shot. It wasn't until 1906 that open-bottom nets were introduced. This significantly revolutionized the flow of the game.</p>
+                <h2 class="h2 mb-2">Understanding the Modern Game of Basketball</h2>
+                <p>Basketball is played on a rectangular court with two teams of five players each. The objective is to score points by shooting the ball through the opponent's hoop, which is positioned 10 feet above the ground. A standard game consists of four quarters, each lasting 12 minutes in the NBA or 10 minutes in international and college basketball.</p>
                 <!-- Title for list -->
+                <h3 class="h3 mt-4 mb-2">Basic Basketball Skills</h3>
+                <!-- Unordered list highlighting basic basketball skills -->
+                <ul class="mb-2">
+                    <li class="mb-2"><strong>Dribbling:</strong> Bouncing the ball up and down while moving across the court</li>
+                    <li class="mb-2"><strong>Shooting:</strong> Accurately throwing the ball towards the basket</li>
+                    <li class="mb-2"><strong>Passing:</strong> Throwing the ball between teammates</li>
+                    <li class="mb-2"><strong>Defense:</strong> Preventing the opponents from scoring baskets</li>
+                    <li class="mb-2"><strong>Rebounding:</strong> Retrieving the ball after a missed shot</li>
+                </ul>
             </section>
-            <section id="timeline" class="content-box">    
-                <h2 class="list-title">Milestones in Basketball History</h2>
-                <!-- Ordered list showing timeline of basketball history -->
-                <ol>
-                    <li>1891 - James Naismith invents basketball in Springfield, Massachusetts</li>
-                    <li>1936 - Basketball becomes an olympic sport</li>
-                    <li>1946 - The Basketball Association of America (BAA) is founded</li>
-                    <li>1949 - The BAA merges with the National Basketball League(NBL) and the National Basketball Association(NBA) is formed</li>
-                    <li>1996 - The WNBA is established</li>
-                </ol>
-            </section>
-        </div>
-        <!-- Second section -->
-        <section>
-            <!-- Section title -->
-            <h2>Understanding the Modern Game of Basketball</h2>
-            <p>Basketball is played on a rectangular court with two teams of five players each. The objective is to score points by shooting the ball through the opponent's hoop, which is positioned 10 feet above the ground. A standard game consists of four quarters, each lasting 12 minutes in the NBA or 10 minutes in international and college basketball.</p>
-            <!-- Title for list -->
-            <h3 class="list-title">Basic Basketball Skills</h3>
-            <!-- Unordered list highlighting basic basketball skills -->
-            <ul>
-                <li><strong>Dribbling:</strong> Bouncing the ball up and down while moving across the court</li>
-                <li><strong>Shooting:</strong> Accurately throwing the ball towards the basket</li>
-                <li><strong>Passing:</strong> Throwing the ball between teammates</li>
-                <li><strong>Defense:</strong> Preventing the opponents from scoring baskets</li>
-                <li><strong>Rebounding:</strong> Retrieving the ball after a missed shot</li>
-            </ul>
-            <!-- Inserts image of basketball court from the relative path -->
-            <!-- Alt explains the image content-->
-            <!-- Width ensures consistent size across devices-->
-            <img src="images/basketball-court.jpg"
-                alt="Diagram of a regulation basketball court showing key areas including three-point line, free throw line, and paint"
-                width="600">
-            <p class="subtitle">Points are scored in three ways: a field goal inside the three-point line is worth two points, a shot from beyond the three-point arc is worth three points, and free throws (awarded after certain fouls) are worth one point each. The team with the most points at the end of regulation time wins the game.</p>
-        </section>
-    </main>
+        </main>
+    </div>
+    <!-- Inserts image of basketball court from the relative path -->
+    <!-- Alt explains the image content-->
+    <!-- Width ensures consistent size across devices-->
+    <div class="text-center mb-2">
+        <img src="images/basketball-court.jpg"
+            alt="Diagram of a regulation basketball court showing key areas including three-point line, free throw line, and paint"
+            class="rounded shadow-sm"
+            style="width: 80%; max-width: 600px; height: auto;">
+    </div>
+    <p class="lead text-center text-body-secondary">Points are scored in three ways: a field goal inside the three-point line is worth two points, a shot from beyond the three-point arc is worth three points, and free throws (awarded after certain fouls) are worth one point each. The team with the most points at the end of regulation time wins the game.</p>
     <!-- Footer section with navigation to legendary players page -->
-    <footer>
+    <footer class="text-center py-4 mt-5">
         <!-- Internal link that navigates to page2 -->
-        <a href="page2.html">Learn more about some of basketball's greats</a>
+        <a href="page2.html" class="btn btn-secondary btn-lg">Learn more about some of basketball's greats</a>
     </footer>
-  </body> 
+</body> 
 </html>
