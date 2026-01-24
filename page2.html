@@ -3,67 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Links to style.css stylesheet-->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Text that shows on the page tab of browser -->
     <title>Legendary Players</title>
 </head>
-<body>
+<body class="text-center">
     <!-- Header to introduce the topic of the page -->
-    <header>
-        <h1>Legendary Basketball Players</h1>
-        <p class="subtitle">Celebrating some of the greatest ever to play the game of basketball</p>
+    <header class="text-center pt-3 pb-1 mb-2">
+        <h1 class="display-4 mb-2">Legendary Basketball Players</h1>
+        <p class="lead text-body-secondary">Celebrating some of the greatest ever to play the game of basketball</p>
     </header>
-    <!-- Main page content about legendary basketball players -->
-    <main>
-        <!-- First section-->
-        <section>
-            <!-- Section title -->
-            <h2>Icons of the NBA</h2>
-            <p>As basketball continues to evolve, new legends emerge each season. The beauty of the sport lies in its constant progression—today's rookies study yesterday's legends while dreaming of creating their own legacy. Whether it's through spectacular dunks, impossible three-pointers, or game-winning shots, basketball continues to produce moments that captivate audiences and inspire the next generation of players.</p>
-            <!-- Title for list -->
-            <h3 class="list-title">What Makes a Basketball Legend?</h3>
-            <!-- Unordered list with characteristics for a basketball legend -->
-            <ul>
-                <li><strong>Championship Success:</strong> Winning titles under pressure demonstrates true greatness</li>
-                <li><strong>Individual Statistics:</strong> Consistently elite scoring, assists, or defensive numbers</li>
-                <li><strong>Cultural Impact:</strong> Influencing basketball culture and inspiring future generations</li>
-                <li><strong>Longevity:</strong> Maintaining excellence over 15+ seasons in the league</li>
-                <li><strong>Innovation:</strong> Introducing new moves, strategies, or playing styles</li>
-            </ul>
-        </section>
-        <!-- Second section -->
-        <div class="flex-container">
-            <section id="goat-debate" class="content-box">
+    <div class="container my-4">
+        <!-- Main page content about legendary basketball players -->
+        <main>
+            <!-- First section-->
+            <section class="mb-3">
                 <!-- Section title -->
-                <h3>Who's the G.O.A.T?</h3>
-                <p>The debate over the greatest basketball player of all time continues to spark passionate discussions among fans. Michael Jordan's six championships and competitive fire, LeBron James's longevity and all-around brilliance, and Kareem Abdul-Jabbar's unstoppable skyhook represent different arguments for basketball supremacy. What's undeniable is that these players elevated the game to new heights and inspired generations of athletes to pursue excellence.</p>
+                <h2 class="h2 mb-2">Icons of the NBA</h2>
+                <p>As basketball continues to evolve, new legends emerge each season. The beauty of the sport lies in its constant progression—today's rookies study yesterday's legends while dreaming of creating their own legacy. Whether it's through spectacular dunks, impossible three-pointers, or game-winning shots, basketball continues to produce moments that captivate audiences and inspire the next generation of players.</p>
                 <!-- Title for list -->
+                <h3 class="h3 mt-4 mb-2">What Makes a Basketball Legend?</h3>
+                <!-- Unordered list with characteristics for a basketball legend -->
+                <ul class="mb-2">
+                    <li class="mb-2"><strong>Championship Success:</strong> Winning titles under pressure demonstrates true greatness</li>
+                    <li class="mb-2"><strong>Individual Statistics:</strong> Consistently elite scoring, assists, or defensive numbers</li>
+                    <li class="mb-2"><strong>Cultural Impact:</strong> Influencing basketball culture and inspiring future generations</li>
+                    <li class="mb-2"><strong>Longevity:</strong> Maintaining excellence over 15+ seasons in the league</li>
+                    <li class="mb-2"><strong>Innovation:</strong> Introducing new moves, strategies, or playing styles</li>
+                </ul>
             </section>
-            <section id="top-five" class="content-box">
-                <h3 class="list-title">My Top 5 Greatest NBA Players</h3>
-                <!-- Ordered list with my top 5 basketball players-->
-                <ol>
-                    <li><strong>Michael Jordan:</strong> 6 NBA Championships, 5 MVP Awards</li>
-                    <li><strong>Lebron James:</strong> 4 NBA Championships, All-time leading scorer with 40,000+ points</li>
-                    <li><strong>Kareem Abdul-Jabbar:</strong> 6 NBA Championships, former all-time scoring leader, mastered the skyhook</li>
-                    <li><strong>Magic Johnson:</strong> 5 NBA Championships, revolutionized the point guard position</li>
-                    <li><strong>Larry Bird:</strong> 3 NBA Championships, one of the greatest shooters and competitors</li>
-                </ol>
-            </section>
-        </div>
-            <!-- Inserts image of Michael Jordan from the relative path -->
-            <!-- Alt explains the image content-->
-            <!-- Width ensures consistent size across devices-->
-            <img src="images/michael-jordan.jfif"
-                alt="Picture of Michael Jordan showing 3 fingers after winning 3 championships in a row"
-                width="600">
-            <p class="subtitle">Michael Jordan after his first three championships</p>
-    </main>
+            <!-- Second section -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="card h-100 rounded shadow-sm" id="goat-debate">
+                        <div class="card-body">
+                                <h3 class="card-title h4 mb-1">Who's the G.O.A.T?</h3>
+                                <p class="card-text">The debate over the greatest basketball player of all time continues to spark passionate discussions among fans. Michael Jordan's six championships and competitive fire, LeBron James's longevity and all-around brilliance, and Kareem Abdul-Jabbar's unstoppable skyhook represent different arguments for basketball supremacy. What's undeniable is that these players elevated the game to new heights and inspired generations of athletes to pursue excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 rounded shadow-sm" id="top-five">
+                        <div class="card-body">
+                                <!-- Title for list -->
+                                <h3 class="card-title h4 mb-1">My Top 5 Greatest NBA Players</h3>
+                                <!-- Ordered list with my top 5 basketball players-->
+                                <ol class="mb-1">
+                                    <li class="mb-2"><strong>Michael Jordan:</strong> 6 NBA Championships, 5 MVP Awards</li>
+                                    <li class="mb-2"><strong>Lebron James:</strong> 4 NBA Championships, All-time leading scorer with 40,000+ points</li>
+                                    <li class="mb-2"><strong>Kareem Abdul-Jabbar:</strong> 6 NBA Championships, former all-time scoring leader, mastered the skyhook</li>
+                                    <li class="mb-2"><strong>Magic Johnson:</strong> 5 NBA Championships, revolutionized the point guard position</li>
+                                    <li class="mb-2"><strong>Larry Bird:</strong> 3 NBA Championships, one of the greatest shooters and competitors</li>
+                                </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Inserts image of Michael Jordan from the relative path -->
+    <!-- Alt explains the image content-->
+    <!-- Width ensures consistent size across devices-->
+    <div class="text-center mb-2">
+        <img src="images/michael-jordan.jfif"
+            alt="Picture of Michael Jordan showing 3 fingers after winning 3 championships in a row"
+            class="rounded shadow-sm"
+            style="width: 80%; max-width: 600px; height: auto;">
+    </div>
+    <p class="lead text-center text-body-secondary">Michael Jordan after his first three championships</p>
     <!-- Footer section with navigation to homepage -->
-    <footer>
-         <!-- Internal link that navigates back to first page -->
-        <a href="index.html">Back to Basketball History</a>
+    <footer class="text-center py-4 mt-5">
+        <!-- Internal link that navigates back to first page -->
+        <a href="index.html" class="btn btn-secondary btn-lg">Back to Basketball History</a>
     </footer>
 </body>
 </html>
