@@ -1,179 +1,41 @@
-/* Reset default browser styles */
+/*Resets browser defaults*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*Custom color scheme*/
 header {
     background-color: wheat;
-    text-align: center;
-    padding: 2rem 1rem;
+    border-bottom: 3px solid #004e89;
 }
 
 body {
     background-color: blanchedalmond;
-    text-align: center;
-    line-height: 1.6;
 }
 
 footer {
+    border-top: 3px solid #004e89;
     background-color: wheat;
-    padding: 1.5rem;
-    margin-top: 3rem;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-/*Heading styles*/
-h1 {
-    font-size: 48px;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 36px;
-    margin: 2rem 0 1rem;
-}
-
-h3 {
-    font-size: 30px;
-    margin: 1rem 0 0.5rem;
-}
-
-/*Paragraph & text styling*/
-p {
-    font-size: 18px;
-    margin-bottom: 1rem;
-    max-width: 800px;
+/*Centers lists as blocks but keeps text in lists left-aligned*/
+ol, ul {
+    display: inline-block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*List styling*/
-ol, ul {
-    text-align: left;
-    display: inline-block;
-    padding: 40px;
-    font-size: 18px;
-    margin: 0.5rem 0 1rem;
-}
-/*Image styling*/
-img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/*Custom classes*/
-.subtitle {
-    font-size: 20px;
-    font-style: italic;
-    color: #4A4A4A;
-    margin-top: 0.5rem;
-}
-
-.list-title {
-    margin-bottom: 0.3rem;
-}
-
-.content-box {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.flex-container {
-    display: flex;
-    gap: 2rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-}
-
-.flex-container .content-box {
-    flex: 1;
-    min-width: 300px;
-}
-
 /*ID selectors for specific sections*/
-#history {
+#history, #timeline {
     border-left: 4px solid #004e89;
     border-right: 4px solid #004e89;
 }
 
-#timeline {
-    border-left: 4px solid #004e89;
-    border-right: 4px solid #004e89;
-}
-
-#goat-debate {
+#goat-debate, #top-five {
     border-left: 4px solid #fca311;
     border-right: 4px solid #fca311;
-}
-
-#top-five {
-    border-left: 4px solid #fca311;
-    border-right: 4px solid #fca311;
-}
-
-/*Media query for optimization for smaller screens (mobiles/tablets etc.)*/
-@media (max-width: 600px) {
-    header {
-        padding: 1.5rem 0.5rem;
-    }
-    /*Smaller font-sizes to fit the smaller screen*/
-    body {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    main {
-        padding: 1rem 0.5rem;
-    }
-
-    ol, ul {
-        padding: 20px;
-        font-size: 16px;
-    }
-    /*Maintains aspect radio and adds margin on mobile devices*/
-    img {
-        max-width: 100%;
-        height: auto;
-        margin: 1rem auto;
-    }
-
-    footer {
-        padding: 1rem;
-        margin-top: 2rem;
-    }
-    /*Stacks content-boxes vertically instead of side-by-side and reduces gap*/
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin: 1rem 0;
-    }
 }
