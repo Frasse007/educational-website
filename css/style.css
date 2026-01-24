@@ -29,13 +29,50 @@ ol, ul {
     margin-right: auto;
 }
 
-/*ID selectors for specific sections*/
+/*ID selectors for history and timeline with blue borders*/
 #history, #timeline {
     border-left: 4px solid #004e89;
     border-right: 4px solid #004e89;
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
 }
 
+/*Hover effect: lifts cards up and adds shadow for depth*/
+#history:hover, #timeline:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 78, 137, 0.2) !important;
+}
+
+/*ID selectors for goat-debate and top-five cards with orange borders*/
 #goat-debate, #top-five {
     border-left: 4px solid #fca311;
     border-right: 4px solid #fca311;
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+}
+
+/*Hover effect: lifts cards up and adds shadow for depth*/
+#goat-debate:hover, #top-five:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(252, 163, 17, 0.2) !important;
+}
+
+/*Transition for all button effects*/
+.btn {
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/*Hover effect: enlarges button and adds shadow for depth*/
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Smooth transition for image scaling*/
+img {
+    transition: transform 0.3s ease;
+}
+
+/*Hover effect: enlarges images for emphasis*/
+img:hover {
+    transform: scale(1.05);
 }
