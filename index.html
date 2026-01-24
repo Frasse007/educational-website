@@ -16,12 +16,15 @@
         <h1 class="display-4 mb-2">The Game of Basketball</h1>
         <p class="lead text-body-secondary">Learn about the history and basics of one of the world's most popular sports</p>
     </header>
-    <div class="container my-4">
-        <!-- Main page content about legendary basketball players -->
-        <main>
+    <!-- Main page content about legendary basketball players -->
+    <main>
+        <!-- Bootstrap container centers content and provides responsive margins -->
+        <div class="container my-4">
             <!-- First section-->
+            <!-- Two-column card layout using Bootstrap grid - stacks on mobile, side-by-side on tablets & computers -->
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
+                    <!-- Bootstrap card with custom blue border via #history ID -->
                     <div class="card h-100 rounded shadow-sm" id="history">
                         <div class="card-body">
                             <h2>The Birth of Basketball</h2>
@@ -31,12 +34,13 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <!-- Bootstrap card with custom blue border via #timeline ID -->
                     <div class="card h-100 rounded shadow-sm" id="timeline">
                         <div class="card-body">
                             <!-- Title for list -->
                             <h2 class="card-title h4 mb-1">Milestones in Basketball History</h2>
                             <!-- Unordered list showing timeline of basketball history -->
-                            <ul class="mb-1">
+                            <ul class="mb-2">
                                 <li class="mb-2"><strong>1891</strong> - James Naismith invents basketball in Springfield, Massachusetts</li>
                                 <li class="mb-2"><strong>1936</strong> - Basketball becomes an olympic sport</li>
                                 <li class="mb-2"><strong>1946</strong> - The Basketball Association of America (BAA) is founded</li>
@@ -50,7 +54,7 @@
                 </div>
             </div>
             <!-- Second section -->
-            <section class="mb-3">
+            <section class="mb-5">
                 <!-- Section title -->
                 <h2 class="h2 mb-2">Understanding the Modern Game of Basketball</h2>
                 <p>Basketball is played on a rectangular court with two teams of five players each. The objective is to score points by shooting the ball through the opponent's hoop, which is positioned 10 feet above the ground. A standard game consists of four quarters, each lasting 12 minutes in the NBA or 10 minutes in international and college basketball.</p>
@@ -65,11 +69,11 @@
                     <li class="mb-2"><strong>Rebounding:</strong> Retrieving the ball after a missed shot</li>
                 </ul>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
     <!-- Inserts image of basketball court from the relative path -->
     <!-- Alt explains the image content-->
-    <!-- Width ensures consistent size across devices-->
+    <!-- Style ensures consistent size across devices-->
     <div class="text-center mb-2">
         <img src="images/basketball-court.jpg"
             alt="Diagram of a regulation basketball court showing key areas including three-point line, free throw line, and paint"

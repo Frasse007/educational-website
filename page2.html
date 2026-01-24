@@ -12,15 +12,16 @@
 </head>
 <body class="text-center">
     <!-- Header to introduce the topic of the page -->
-    <header class="text-center pt-3 pb-1 mb-2">
+    <header class="text-center pt-3 pb-1 mb-4">
         <h1 class="display-4 mb-2">Legendary Basketball Players</h1>
         <p class="lead text-body-secondary">Celebrating some of the greatest ever to play the game of basketball</p>
     </header>
-    <div class="container my-4">
-        <!-- Main page content about legendary basketball players -->
-        <main>
+    <!-- Main page content about legendary basketball players -->
+    <main>
+        <!-- Bootstrap container centers content and provides responsive margins -->
+        <div class="container my-4">
             <!-- First section-->
-            <section class="mb-3">
+            <section class="mb-5">
                 <!-- Section title -->
                 <h2 class="h2 mb-2">Icons of the NBA</h2>
                 <p>As basketball continues to evolve, new legends emerge each season. The beauty of the sport lies in its constant progression—today's rookies study yesterday's legends while dreaming of creating their own legacy. Whether it's through spectacular dunks, impossible three-pointers, or game-winning shots, basketball continues to produce moments that captivate audiences and inspire the next generation of players.</p>
@@ -36,22 +37,25 @@
                 </ul>
             </section>
             <!-- Second section -->
+            <!-- Two-column card layout using Bootstrap grid - stacks on mobile, side-by-side on tablets & computers -->
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
+                    <!-- Bootstrap card with custom orange border via #goat-debate ID -->
                     <div class="card h-100 rounded shadow-sm" id="goat-debate">
                         <div class="card-body">
-                                <h3 class="card-title h4 mb-1">Who's the G.O.A.T?</h3>
+                                <h2 class="card-title h4 mb-2">Who's the G.O.A.T?</h2>
                                 <p class="card-text">The debate over the greatest basketball player of all time continues to spark passionate discussions among fans. Michael Jordan's six championships and competitive fire, LeBron James's longevity and all-around brilliance, and Kareem Abdul-Jabbar's unstoppable skyhook represent different arguments for basketball supremacy. What's undeniable is that these players elevated the game to new heights and inspired generations of athletes to pursue excellence.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <!-- Bootstrap card with custom orange border via #top-five ID -->
                     <div class="card h-100 rounded shadow-sm" id="top-five">
                         <div class="card-body">
                                 <!-- Title for list -->
-                                <h3 class="card-title h4 mb-1">My Top 5 Greatest NBA Players</h3>
+                                <h2 class="card-title h4 mb-2">My Top 5 Greatest NBA Players</h2>
                                 <!-- Ordered list with my top 5 basketball players-->
-                                <ol class="mb-1">
+                                <ol class="mb-2">
                                     <li class="mb-2"><strong>Michael Jordan:</strong> 6 NBA Championships, 5 MVP Awards</li>
                                     <li class="mb-2"><strong>Lebron James:</strong> 4 NBA Championships, All-time leading scorer with 40,000+ points</li>
                                     <li class="mb-2"><strong>Kareem Abdul-Jabbar:</strong> 6 NBA Championships, former all-time scoring leader, mastered the skyhook</li>
@@ -62,11 +66,11 @@
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
     <!-- Inserts image of Michael Jordan from the relative path -->
     <!-- Alt explains the image content-->
-    <!-- Width ensures consistent size across devices-->
+    <!-- Style ensures consistent size across devices-->
     <div class="text-center mb-2">
         <img src="images/michael-jordan.jfif"
             alt="Picture of Michael Jordan showing 3 fingers after winning 3 championships in a row"
